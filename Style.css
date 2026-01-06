@@ -1,0 +1,41 @@
+/* General Settings */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+:root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; --white: #ffffff; }
+body { color: #334155; line-height: 1.6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; text-align: center; }
+.bg-light { background-color: var(--light); }
+.highlight { color: var(--primary); }
+a { text-decoration: none; color: inherit; }
+section { padding: 60px 0; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--dark); }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: var(--white); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+.logo { font-weight: bold; font-size: 1.5rem; color: var(--primary); }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+
+/* Hero */
+header { height: 90vh; display: flex; justify-content: center; align-items: center; background: var(--dark); color: var(--white); text-align: center; }
+header h1 { font-size: 3rem; margin-bottom: 10px; }
+
+/* Buttons */
+.btn { display: inline-block; background: var(--primary); color: var(--white); padding: 10px 25px; border-radius: 5px; margin-top: 20px; }
+.btn:hover { background: #1d4ed8; }
+
+/* Skills */
+.skills-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+.skill-card { background: var(--white); padding: 15px 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-weight: bold; display: flex; align-items: center; gap: 10px; }
+.skill-card i { color: var(--primary); font-size: 1.2rem; }
+
+/* Projects */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.project-card { background: var(--white); border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: left; padding: 20px; }
+.placeholder { border: 2px dashed #ccc; background: #f9f9f9; display: flex; align-items: center; justify-content: center; text-align: center; }
+.tags span { background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; }
+.btn-small { display: inline-block; margin-top: 15px; color: var(--primary); font-weight: bold; font-size: 0.9rem; }
+
+/* Footer */
+footer { background: var(--dark); color: var(--white); text-align: center; padding: 20px; }
+
+/* Mobile */
+@media (max-width: 768px) { .nav-links { display: none; } header h1 { font-size: 2rem; } }
